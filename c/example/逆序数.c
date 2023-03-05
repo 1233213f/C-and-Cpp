@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+	int x,n,m=0;
+	
+	scanf("%d",&x);
+	
+	while (x>0){
+		n=x%10;
+		//printf("%d",n);
+		m=m*10+n;
+		//printf("x=%d,n=%d,m=%d",x,n,m);
+		x=x/10;
+	}
+	printf("%d",m);
+	
+	return 0;
+}
